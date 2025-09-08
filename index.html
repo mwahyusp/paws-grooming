@@ -470,11 +470,21 @@
           </div>
         </div>
         <div class="copyright">
-          <p>&copy; 2023 GroomingPaws. All rights reserved.</p>
+          <p>
+            &copy; <span id="current-year">2024</span>
+            <a href="#home" style="color: white">GroomingPaws</a>. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </footer>
+    <script>
+      // Ambil elemen span
+      const yearSpan = document.getElementById("current-year");
 
+      // Set tahun saat ini
+      yearSpan.textContent = new Date().getFullYear();
+    </script>
     <!-- WhatsApp Chat -->
     <div class="whatsapp-chat">
       <a
